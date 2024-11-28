@@ -1,11 +1,11 @@
 import './App.css';
-import PhotoSlider from './photoSlider';
+import PhotoSlider from './PhotoSlider';
 import SmartAppBanner from './smartAppBanner';
 
 function App() {
   return (
     <div className="App">
-      <div className="smart-app-banner-container">
+      <div className={styles.smartAppBannerContainer}>
         <SmartAppBanner />
       </div>
       <div className="slider-container">
@@ -14,5 +14,9 @@ function App() {
     </div>
   );
 }
+
+const styles = {
+  smartAppBannerContainer: {},
+};
 
 export default App;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import tspAppLogo from './images/tspAppLogo.png';
 
 const SmartAppBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -8,34 +9,27 @@ const SmartAppBanner = () => {
   };
 
   return (
-    isVisible && (
-      <div style={styles.banner}>
-        <div style={styles.content}>
-          <img
-            src="https://via.placeholder.com/50" // Replace with your app icon URL
-            alt="App Icon"
-            style={styles.icon}
-          />
-          <div style={styles.text}>
-            <h3 style={styles.title}>Your App Name</h3>
-            <p style={styles.subtitle}>
-              Get the best experience by downloading our app!
-            </p>
+    <>
+      {isVisible && (
+        <div style={styles.banner}>
+          <div style={styles.content}>
+            <button onClick={handleClose} style={styles.closeButton}>
+              ✕
+            </button>
+            <img src={tspAppLogo} alt="App Icon" style={styles.icon} />
+            <div style={styles.text}>
+              <p style={styles.title}>Try Trails Status Pro Free</p>
+              <p style={styles.subtitle}>Only in the app store</p>
+            </div>
+          </div>
+          <div style={styles.actions}>
+            <a href="https://example.com" style={styles.downloadButton}>
+              Download
+            </a>
           </div>
         </div>
-        <div style={styles.actions}>
-          <a
-            href="https://example.com" // Replace with your app store URL
-            style={styles.downloadButton}
-          >
-            Download
-          </a>
-          <button onClick={handleClose} style={styles.closeButton}>
-            ✕
-          </button>
-        </div>
-      </div>
-    )
+      )}
+    </>
   );
 };
 
@@ -44,24 +38,34 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 15px',
+    // padding: '10px 15px',
     backgroundColor: '#007BFF',
     color: '#fff',
-    position: 'fixed',
+    position: 'relative', // Changed from fixed
     top: 0,
     left: 0,
     right: 0,
     zIndex: 1000,
+    height: '60px',
   },
   content: {
     display: 'flex',
     alignItems: 'center',
   },
+  closeButton: {
+    backgroundColor: 'transparent',
+    color: '#fff',
+    border: 'none',
+    fontSize: '16px',
+    cursor: 'pointer',
+    marginLeft: '-8px',
+    marginRight: '10px',
+  },
   icon: {
-    width: '50px',
-    height: '50px',
+    width: '30px',
+    height: '30px',
     borderRadius: '10px',
-    marginRight: '15px',
+    marginRight: '5px',
   },
   text: {
     display: 'flex',
@@ -69,12 +73,12 @@ const styles = {
   },
   title: {
     margin: 0,
-    fontSize: '16px',
+    fontSize: '12px',
     fontWeight: 'bold',
   },
   subtitle: {
     margin: 0,
-    fontSize: '14px',
+    fontSize: '12px',
   },
   actions: {
     display: 'flex',
@@ -83,18 +87,12 @@ const styles = {
   downloadButton: {
     backgroundColor: '#fff',
     color: '#007BFF',
+    fontSize: '12px',
     padding: '8px 12px',
-    borderRadius: '5px',
+    borderRadius: '50px',
     textDecoration: 'none',
     fontWeight: 'bold',
-    marginRight: '10px',
-  },
-  closeButton: {
-    backgroundColor: 'transparent',
-    color: '#fff',
-    border: 'none',
-    fontSize: '16px',
-    cursor: 'pointer',
+    marginRight: '5px',
   },
 };
 
