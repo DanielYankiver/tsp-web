@@ -1,0 +1,68 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 15px;
+  background-color: ForestGreen;
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 60px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -8px;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.downloadButton {
+  background-color: SaddleBrown;
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 5px;
+}
