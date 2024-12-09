@@ -14,6 +14,11 @@ function App() {
           <PhotoSlider />
         </div>
       </div>
+      <div>
+        other content: slides that show you how the app works with narrative to
+        explain
+      </div>
+      <div>Footer</div>
     </div>
   );
 }
