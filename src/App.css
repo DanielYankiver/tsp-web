@@ -1,13 +1,26 @@
 .App {
   text-align: center;
-  background-image: url('./images/mtbbgmobile1.png'); /* Path to your image */
-  background-size: cover; /* Scale the image to cover the entire background */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center the image */
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  color: white; /* Ensure text is visible */
 }
 
 .app-container {
-  margin-top: 70px;
+  /* margin-top: 10px; */
+  background-image: url('./images/mtbbgmobile1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.app-title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: black;
+  display: inline-block;
+  margin: 80px 0 20px 0;
 }

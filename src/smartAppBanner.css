@@ -3,9 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1px 15px;
-  background-color: ForestGreen;
+  background-color: rgba(34, 139, 34, 0.9); /* ForestGreen with 90% opacity */
   color: #fff;
-  position: relative;
+  position: fixed; /* relative if want to push content down */
   top: 0;
   left: 0;
   right: 0;

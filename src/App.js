@@ -9,7 +9,7 @@ function App() {
         <SmartAppBanner />
       </div>
       <div className="app-container">
-        <div>The only app for getting your trail status</div>
+        <div className="app-title">Trail Status Pro</div>
         <div className="slider-container">
           <PhotoSlider />
         </div>
