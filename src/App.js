@@ -1,4 +1,6 @@
 import './App.css';
+import Footer from './Footer';
+import InfoSlider from './infoSlider';
 import PhotoSlider from './PhotoSlider';
 import SmartAppBanner from './smartAppBanner';
 
@@ -14,11 +16,16 @@ function App() {
           <PhotoSlider />
         </div>
       </div>
-      <div>
-        other content: slides that show you how the app works with narrative to
-        explain
+      <div className="info-section">
+        <div className="info-section-title">What's New</div>
+        <InfoSlider />
       </div>
-      <div>Footer</div>
+      <div className="admin-section">
+        <div className="admin-section-title">Admin Ready</div>
+      </div>
+      <div className="footer-container">
+        <Footer />
+      </div>
     </div>
   );
 }

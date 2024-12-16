@@ -1,26 +1,79 @@
 .App {
   text-align: center;
+  background-color: #8b4513;
 }
 
 .app-container {
-  /* margin-top: 10px; */
+  /* Add a dark overlay to the background image */
+  position: relative;
   background-image: url('./images/mtbbgmobile1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  min-height: 86vh;
   color: white;
+  /* text-align: left; */
+}
+
+.app-container::before {
+  /* Create a dark overlay */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.app-container > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
 }
 
 .app-title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 46px;
+  font-size: 32px;
   font-weight: 900;
 
-  background-color: rgba(255, 255, 255, 0.6);
+  /* background-color: rgba(255, 255, 255, 0.6); */
   border-radius: 15px;
   padding: 10px 20px;
-  color: black;
+  color: white;
   display: inline-block;
   margin: 80px 0 20px 0;
+}
+
+.info-section {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 30px;
+}
+
+.info-section-title {
+  color: white;
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.admin-section {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 30px;
+}
+
+.admin-section-title {
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.footer-container {
+  width: 102vw;
+  overflow: hidden;
 }
