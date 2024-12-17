@@ -1,7 +1,8 @@
 import React from 'react';
 import appLogo from './images/tspAppLogo.png';
-import { FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './Footer.css';
+import { FaX, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const appName = 'TrailStatusPro';
@@ -31,6 +32,22 @@ const Footer = () => {
           className="footer-icon"
         >
           <FaInstagram />
+        </a>
+        <a
+          href="https://instagram.com/myapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-icon"
+        >
+          <FaFacebook />
+        </a>
+        <a
+          href="https://instagram.com/myapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-icon"
+        >
+          <FaXTwitter />
         </a>
       </div>
     </footer>

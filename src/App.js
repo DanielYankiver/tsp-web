@@ -20,9 +20,9 @@ function App() {
         <div className="info-section-title">What's New</div>
         <InfoSlider />
       </div>
-      <div className="admin-section">
+      {/* <div className="admin-section">
         <div className="admin-section-title">Admin Ready</div>
-      </div>
+      </div> */}
       <div className="footer-container">
         <Footer />
       </div>
