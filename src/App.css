@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #8b4513;
+  width: 102vw;
 }
 
 .app-container {
@@ -33,7 +34,7 @@
 }
 
 .app-title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   font-size: 32px;
   font-weight: 900;
 
@@ -45,15 +46,22 @@
   margin: 80px 0 20px 0;
 }
 
+.trail-systems-image {
+  width: 200px;
+}
+
 .info-section {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-bottom: 30px;
+  position: relative; /* Allows positioning of the pseudo-element */
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: white; /* Ensure text is visible over dark overlay */
 }
 
 .info-section-title {
-  color: white;
+  color: black;
+  font-weight: 600;
   font-size: x-large;
-  margin-top: 20px;
   margin-bottom: 10px;
   text-align: left;
   margin-left: 20px;
@@ -61,7 +69,7 @@
 
 .admin-section {
   color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   margin-bottom: 30px;
 }
 
@@ -74,6 +82,6 @@
 }
 
 .footer-container {
-  width: 102vw;
+  /* width: 102vw; */
   overflow: hidden;
 }

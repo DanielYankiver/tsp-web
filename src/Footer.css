@@ -3,8 +3,27 @@
   justify-content: space-between; /* Aligns left and right sections */
   align-items: flex-end; /* Aligns both sections at the bottom */
   padding: 20px 30px 10px 30px;
-  background-color: #333;
+  background-color: #1d1c1c;
   color: #fff;
+  background-image: url('./images/TopoBg3.png'); /* Add your image URL here */
+  background-size: cover; /* Ensures the image covers the entire footer */
+  background-position: center; /* Centers the background image */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 30px 10px 30px;
+  background-color: #333; /* Fallback color */
+  color: #fff;
+
+  /* Dark gradient overlay combined with background image */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('./images/TopoBg3.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer-left {
@@ -39,8 +58,8 @@
 .footer-download-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #8b4513;
-  color: #fff;
+  background-color: white;
+  color: #8b4513;
   text-decoration: none;
   border-radius: 5px;
   margin-bottom: 10px;

@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './Footer';
 import InfoSlider from './infoSlider';
 import PhotoSlider from './PhotoSlider';
+import TrailSystemView from './images/TrailSystemMain.png';
 import SmartAppBanner from './smartAppBanner';
 
 function App() {
@@ -11,9 +12,13 @@ function App() {
         <SmartAppBanner />
       </div>
       <div className="app-container">
-        <div className="app-title">Trail Status Pro</div>
+        <div className="app-title">TRAIL STATUS PRO</div>
         <div className="slider-container">
-          <PhotoSlider />
+          <img
+            src={TrailSystemView}
+            alt="trail systems view"
+            className="trail-systems-image"
+          />
         </div>
       </div>
       <div className="info-section">

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-logos">
           <img src={appLogo} alt="App Logo" className="footer-logo" />
           <a href="/download" className="footer-download-button">
-            Download
+            Coming Soon
           </a>
         </div>
         <a href={`mailto:${contactEmail}`} className="footer-contact">

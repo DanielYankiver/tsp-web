@@ -25,7 +25,7 @@ const SmartAppBanner = () => {
           </div>
           <div className="actions">
             <a href="https://example.com" className="downloadButton">
-              Download
+              Coming Soon
             </a>
           </div>
         </div>

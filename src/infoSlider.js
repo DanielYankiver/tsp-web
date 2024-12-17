@@ -1,13 +1,13 @@
 import React from 'react';
-import ProfileInfo from './images/ProfileInfo.png';
-import ExploreInfo from './images/ExploreInfo.png';
-import TrailsInfo from './images/TrailsInfo.png';
-import EventsInfo from './images/EventsInfo.png';
-import MapsInfo from './images/MapsInfo.png';
+import Explore from './images/ExploreCarousel.png';
+import TrailDetails from './images/TrailDetailsCarousel.png';
+import Map from './images/MapCarousel.png';
+import Events from './images/EventsCarousel.png';
+import Volunteer from './images/VolunteerCarousel.png';
 import './infoSlider.css';
 
 const InfoSlider = () => {
-  const images = [ProfileInfo, ExploreInfo, TrailsInfo, EventsInfo, MapsInfo];
+  const images = [Explore, Map, Events, TrailDetails, Volunteer];
 
   return (
     <div className="horizontal-scroll">
