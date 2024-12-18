@@ -1,8 +1,8 @@
 import React from 'react';
 import appLogo from './images/tspAppLogo.png';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import './Footer.css';
-import { FaX, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const appName = 'TrailStatusPro';
@@ -13,7 +13,12 @@ const Footer = () => {
       <div className="footer-left">
         <div className="footer-logos">
           <img src={appLogo} alt="App Logo" className="footer-logo" />
-          <a href="/download" className="footer-download-button">
+          <a
+            href="https://www.instagram.com/trailstatuspro?igsh=cjV4Zm9hdWEzbWs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-download-button"
+          >
             Coming Soon
           </a>
         </div>

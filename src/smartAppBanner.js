@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './smartAppBanner.css';
 import tspAppLogo from './images/tspAppLogo.png';
+import './smartAppBanner.css';
 
 const SmartAppBanner = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -24,7 +24,12 @@ const SmartAppBanner = () => {
             </div>
           </div>
           <div className="actions">
-            <a href="https://example.com" className="downloadButton">
+            <a
+              href="https://www.instagram.com/trailstatuspro?igsh=cjV4Zm9hdWEzbWs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="downloadButton"
+            >
               Coming Soon
             </a>
           </div>

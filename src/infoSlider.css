@@ -12,7 +12,7 @@
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb {
-  background: #888; /* Scrollbar color */
+  background: #888;
   border-radius: 4px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .image-container {
-  flex: 0 0 auto; /* Prevent the images from shrinking */
+  flex: 0 0 auto;
   scroll-snap-align: center;
   width: 290px;
   display: flex;

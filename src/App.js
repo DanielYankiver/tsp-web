@@ -1,8 +1,8 @@
-import './App.css';
 import Footer from './Footer';
 import InfoSlider from './infoSlider';
 import TrailSystemView from './images/TrailSystemMainOpt.png';
 import SmartAppBanner from './smartAppBanner';
+import './App.css';
 
 function App() {
   return (

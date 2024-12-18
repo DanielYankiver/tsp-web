@@ -58,7 +58,7 @@
 
 .footer-right {
   display: flex;
-  align-items: flex-end; /* Aligns Instagram icon with copyright */
+  align-items: flex-end;
   justify-content: flex-end;
   margin-bottom: 1px;
 }
@@ -72,5 +72,5 @@
 
 .footer-copyright {
   text-align: right;
-  margin-right: 10px; /* Align copyright text to the right */
+  margin-right: 10px;
 }
