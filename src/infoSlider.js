@@ -1,9 +1,9 @@
 import React from 'react';
-import Explore from './images/ExploreCarousel.png';
-import TrailDetails from './images/TrailDetailsCarousel.png';
-import Map from './images/MapCarousel.png';
-import Events from './images/EventsCarousel.png';
-import Volunteer from './images/VolunteerCarousel.png';
+import Explore from './images/ExploreCarouselOpt.jpg';
+import Map from './images/MapCarouselOpt.jpg';
+import Events from './images/EventsCarouselOpt.jpg';
+import TrailDetails from './images/TrailDetailsCarouselOpt.jpg';
+import Volunteer from './images/VolunteerCarouselOpt.jpg';
 import './infoSlider.css';
 
 const InfoSlider = () => {

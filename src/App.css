@@ -5,15 +5,28 @@
 }
 
 .app-container {
-  /* Add a dark overlay to the background image */
   position: relative;
-  background-image: url('./images/mtbbgmobile1.png');
+  background-image: url('./images/mtbBgMobileOpt.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 86vh;
   color: white;
-  /* text-align: left; */
+}
+
+@media (min-width: 600px) {
+  .App {
+    width: 100vw;
+  }
+  .app-container {
+    position: relative;
+    background-image: url('./images/mtbBgWebOpt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 86vh;
+    color: white;
+  }
 }
 
 .app-container::before {
@@ -30,15 +43,12 @@
 
 .app-container > * {
   position: relative;
-  z-index: 2; /* Ensure content is above the overlay */
+  z-index: 2;
 }
 
 .app-title {
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   font-size: 32px;
   font-weight: 900;
-
-  /* background-color: rgba(255, 255, 255, 0.6); */
   border-radius: 15px;
   padding: 10px 20px;
   color: white;
@@ -51,11 +61,10 @@
 }
 
 .info-section {
-  position: relative; /* Allows positioning of the pseudo-element */
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  position: relative;
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: white; /* Ensure text is visible over dark overlay */
+  background-color: white;
 }
 
 .info-section-title {
@@ -69,7 +78,6 @@
 
 .admin-section {
   color: white;
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   margin-bottom: 30px;
 }
 

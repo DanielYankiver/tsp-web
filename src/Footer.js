@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <a
-          href="https://instagram.com/myapp"
+          href="https://www.instagram.com/trailstatuspro?igsh=cjV4Zm9hdWEzbWs1"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-icon"
@@ -34,7 +34,7 @@ const Footer = () => {
           <FaInstagram />
         </a>
         <a
-          href="https://instagram.com/myapp"
+          href="https://www.facebook.com/share/14iFvRnyUf/?mibextid=LQQJ4d"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-icon"
@@ -42,7 +42,7 @@ const Footer = () => {
           <FaFacebook />
         </a>
         <a
-          href="https://instagram.com/myapp"
+          href="https://x.com/trailstatuspro?s=21&t=ruA5DH8FrMVQ1s7tJNrH_A"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-icon"
